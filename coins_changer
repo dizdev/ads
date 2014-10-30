@@ -1,0 +1,17 @@
+# Coins changer
+
+money = [1, 2, 5, 10, 20, 50]
+
+def change(sum):
+    money.reverse()
+    exchange = dict ([ c.coin,  c.amount) for c in money ]
+    rest = money
+    for i in money:
+        while sum % i == 0:
+            
+    return exchange
+
+if __name__=="__main__":
+    change(int(raw_input("Give me money you want to exchange:")))
+    print change(money*100)
+    
